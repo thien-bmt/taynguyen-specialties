@@ -1,0 +1,23 @@
+{
+  "name": "tay-nguyen-specialties",
+  "version": "1.0.0",
+  "description": "Trang web giới thiệu và mua bán Đặc sản Tây Nguyên",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "tay-nguyen",
+    "dac-san",
+    "coffee",
+    "ecommerce",
+    "vanilla-js"
+  ],
+  "author": "Đặc sản Tây Nguyên Team",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.5",
+    "mongoose": "^9.10.3"
+  }
+}

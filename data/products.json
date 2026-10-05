@@ -1,0 +1,122 @@
+[
+  {
+    "id": "sp01",
+    "name": "Cà Phê Buôn Ma Thuột Nguyên Chất",
+    "category": "Cà phê & Đồ uống",
+    "price": 180000,
+    "unit": "Gói 500g",
+    "origin": "Đắk Lắk",
+    "image": "assets/images/sp01_caphe.svg",
+    "stock": 150,
+    "description": "Hạt cà phê Robusta rang xay nguyên chất 100% từ vùng đất đỏ bazan Buôn Ma Thuột, hương vị đậm đà, đắng thanh và thơm nồng quyến rũ.",
+    "featured": true
+  },
+  {
+    "id": "sp02",
+    "name": "Thịt Bò Một Nắng Krông Pa",
+    "category": "Thực phẩm & Chế biến",
+    "price": 420000,
+    "unit": "Gói 500g",
+    "origin": "Gia Lai",
+    "image": "assets/images/sp02_bo_mot_nang.svg",
+    "stock": 80,
+    "description": "Đặc sản thịt bò cỏ chăn thả tự nhiên vùng Krông Pa, ướp gia vị sả ớt Tây Nguyên phơi đúng 1 nắng vàng. Ăn kèm muối kiến vàng thơm ngậy.",
+    "featured": true
+  },
+  {
+    "id": "sp03",
+    "name": "Sâm Ngọc Linh Kon Tum Thượng Hạng",
+    "category": "Dược liệu quý",
+    "price": 3500000,
+    "unit": "Hộp 100g",
+    "origin": "Kon Tum",
+    "image": "assets/images/sp03_sam_ngoc_linh.svg",
+    "stock": 25,
+    "description": "Quốc bảo Việt Nam trồng trên đỉnh núi Ngọc Linh cao trên 2.000m, hàm lượng Saponin cao vượt trội, bồi bổ sức khỏe và tăng cường thể lực.",
+    "featured": true
+  },
+  {
+    "id": "sp04",
+    "name": "Rượu Cần Tây Nguyên Gia Truyền",
+    "category": "Cà phê & Đồ uống",
+    "price": 250000,
+    "unit": "Bình 5 Lít",
+    "origin": "Đắk Lắk",
+    "image": "assets/images/sp04_ruou_can.svg",
+    "stock": 40,
+    "description": "Rượu cần ủ từ nếp nương và men lá rừng truyền thống của người Ba Na, Ê Đê. Vị ngọt thơm dịu êm, không đau đầu, đậm đà tình thân buôn làng.",
+    "featured": false
+  },
+  {
+    "id": "sp05",
+    "name": "Mật Ong Rừng Gia Lai Nguyên Chất",
+    "category": "Nông sản & Hạt",
+    "price": 320000,
+    "unit": "Chai 1 Lít",
+    "origin": "Gia Lai",
+    "image": "assets/images/sp05_mat_ong.svg",
+    "stock": 95,
+    "description": "Mật ong khai thác tự nhiên từ rừng già Chư Mom Ray - Gia Lai. Mật sánh đặc, màu vàng óng, hương thơm hoa rừng tự nhiên và giàu dưỡng chất.",
+    "featured": true
+  },
+  {
+    "id": "sp06",
+    "name": "Hồ Tiêu Chư Sê Hạt Đen",
+    "category": "Nông sản & Hạt",
+    "price": 150000,
+    "unit": "Hũ 500g",
+    "origin": "Gia Lai",
+    "image": "assets/images/sp06_ho_tieu.svg",
+    "stock": 200,
+    "description": "Hạt tiêu đen Chư Sê hạt tròn đều, mẩy ruột, cay nồng và thơm cay đặc trưng của vùng đất bazan, là gia vị hảo hạng cho mọi căn bếp.",
+    "featured": false
+  },
+  {
+    "id": "sp07",
+    "name": "Hạt Macca Sấy Nứt Vỏ Lâm Đồng",
+    "category": "Nông sản & Hạt",
+    "price": 210000,
+    "unit": "Hũ 500g",
+    "origin": "Lâm Đồng",
+    "image": "assets/images/sp07_macca.svg",
+    "stock": 120,
+    "description": "Nữ hoàng các loại hạt trồng tại vùng cao nguyên Lâm Đồng. Hạt được sấy nứt vỏ tự nhiên, nhân giòn béo ngậy, bồi bổ trí não và tim mạch.",
+    "featured": true
+  },
+  {
+    "id": "sp08",
+    "name": "Bơ 034 Sáp Dẻo Lâm Đồng",
+    "category": "Nông sản & Hạt",
+    "price": 85000,
+    "unit": "Túi 1kg",
+    "origin": "Lâm Đồng",
+    "image": "assets/images/sp08_bo_034.svg",
+    "stock": 60,
+    "description": "Giống bơ 034 quả dài đặc sản Bảo Lộc Lâm Đồng, thịt quả dẻo quánh, màu vàng bơ hạt nhỏ, hương vị béo béo thơm lừng.",
+    "featured": false
+  },
+  {
+    "id": "sp09",
+    "name": "Măng Khô Rừng Nương Kon Tum",
+    "category": "Thực phẩm & Chế biến",
+    "price": 280000,
+    "unit": "Gói 500g",
+    "origin": "Kon Tum",
+    "image": "assets/images/sp09_mang_kho.svg",
+    "stock": 70,
+    "description": "Măng nứa rừng tươi hái trên vùng cao Kon Tum, luộc sạch phơi nắng tự nhiên không lưu huỳnh. Măng vàng ruộm, giòn ngọt nấu canh miến hay kho thịt đều xuất sắc.",
+    "featured": false
+  },
+  {
+    "id": "sp10",
+    "name": "Cơm Lam Gà Nướng Đắk Nông",
+    "category": "Thực phẩm & Chế biến",
+    "price": 230000,
+    "unit": "Mẹt 1 Con + 3 Ống",
+    "origin": "Đắk Nông",
+    "image": "assets/images/sp10_com_lam_ga_nuong.svg",
+    "stock": 35,
+    "description": "Set gà đồi nướng than hoa ướp mắc khén sả ớt thơm phức kết hợp cơm lam nếp nương nướng ống tre dẻo thơm trọn vị núi rừng Tây Nguyên.",
+    "featured": true
+  }
+]

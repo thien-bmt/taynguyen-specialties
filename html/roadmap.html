@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Định Hướng - Đặc Sản Tây Nguyên</title>
+  <meta name="description" content="Lộ trình và chiến lược định hướng phát triển hệ thống e-commerce bán đặc sản Tây Nguyên.">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- HEADER / NAVIGATION -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <div class="logo-text">Đặc Sản <span>Tây Nguyên</span></div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Trang Chủ</a></li>
+          <li><a href="products.html">Sản Phẩm</a></li>
+          <li><a href="origins.html">Nguồn Gốc</a></li>
+          <li><a href="roadmap.html" class="active">Định Hướng</a></li>
+          <li><a href="contact.html">Liên Hệ</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="cart-btn" id="open-cart-btn">
+          <span>Giỏ Hàng</span>
+          <span class="cart-badge" id="cart-badge">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top: 40px; padding-bottom: 60px;">
+
+    <!-- ROADMAP / DEVELOPMENT PLAN SECTION -->
+    <section class="roadmap-section">
+      <div class="roadmap-header">
+        <div class="section-subtitle" style="color: #ffcc80;">CHIẾN LƯỢC KỸ THUẬT & E-COMMERCE</div>
+        <h2>Định Hướng Phát Triển Chức Năng Đặt Hàng</h2>
+        <p style="color: #ffe0b2; max-width: 800px; margin-top: 10px; line-height: 1.6;">
+          Dự án được quy hoạch theo mô hình Nền tảng Thương mại điện tử Đa vùng (Multi-region E-Commerce Platform), sẵn sàng nâng cấp từ phiên bản Vanilla JS hiện tại sang hệ thống full-stack hoàn chỉnh.
+        </p>
+      </div>
+
+      <div class="roadmap-grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
+        <div class="roadmap-card">
+          <span class="roadmap-phase">Giai Đoạn 1 (Hiện Tại)</span>
+          <h4>Vanilla JS & Client Cart</h4>
+          <p>Tương tác thời gian thực không tải lại trang, giỏ hàng LocalStorage, form validation thông minh và hóa đơn giả lập.</p>
+        </div>
+
+        <div class="roadmap-card">
+          <span class="roadmap-phase">Giai Đoạn 2</span>
+          <h4>RESTful API & Database</h4>
+          <p>Xây dựng Backend Node.js (Express) / Python (FastAPI) và CSDL MongoDB/PostgreSQL quản lý tồn kho real-time & đơn hàng.</p>
+        </div>
+
+        <div class="roadmap-card">
+          <span class="roadmap-phase">Giai Đoạn 3</span>
+          <h4>Thanh Toán & Ship API</h4>
+          <p>Tích hợp cổng thanh toán VietQR động, MoMo, VNPay và kết nối API tự động tính phí vận chuyển GHN/GHTK tới 63 tỉnh thành.</p>
+        </div>
+
+        <div class="roadmap-card">
+          <span class="roadmap-phase">Giai Đoạn 4</span>
+          <h4>Admin Dashboard Nông Hộ</h4>
+          <p>Trang quản trị dành riêng cho cơ sở sản xuất Tây Nguyên theo dõi doanh thu, vụ mùa thu hoạch cà phê/bơ và quản lý đơn hàng.</p>
+        </div>
+      </div>
+
+      <div style="background: rgba(255, 255, 255, 0.08); padding: 24px; border-radius: 12px; margin-top: 36px; border: 1px solid rgba(255,255,255,0.15);">
+        <h3 style="color: #ffe0b2; margin-bottom: 12px; font-size: 20px;">Tài Liệu Chi Tiết Trong Dự Án</h3>
+        <p style="color: #d7ccc8; font-size: 14px; line-height: 1.6;">
+          Nội dung định hướng chi tiết và mô hình dữ liệu đơn hàng (Order Schema Model) được lưu trữ đầy đủ tại tệp tài liệu <code style="background: rgba(0,0,0,0.3); padding: 2px 6px; border-radius: 4px; color: #ffb74d;">docs/project-plan.md</code>.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL: CART DRAWER -->
+  <div class="modal-overlay" id="cart-modal">
+    <div class="modal-content">
+      <button class="modal-close" id="close-cart-btn">✕</button>
+      <h3 style="font-size: 22px; color: var(--primary-brown); margin-bottom: 16px;">Giỏ Hàng Đặc Sản</h3>
+      
+      <div class="cart-drawer-items" id="cart-items-list">
+        <!-- Rendered by JavaScript -->
+      </div>
+
+      <div class="cart-summary-box">
+        <div class="summary-row total">
+          <span>Tổng Cộng:</span>
+          <span id="cart-total-amount">0 đ</span>
+        </div>
+      </div>
+
+      <button class="submit-btn" id="checkout-btn" style="margin-top: 20px;">
+        Tiến Hành Đặt Hàng
+      </button>
+    </div>
+  </div>
+
+  <!-- MODAL: ORDER CHECKOUT FORM -->
+  <div class="modal-overlay" id="order-modal">
+    <div class="modal-content" style="max-width: 550px;">
+      <button class="modal-close" id="close-order-btn">✕</button>
+      <h3 style="font-size: 22px; color: var(--primary-brown); margin-bottom: 6px;">Xác Nhận Form Đặt Hàng</h3>
+      <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 16px;">Vui lòng điền chính xác thông tin nhận hàng.</p>
+
+      <div id="order-summary-box" style="background: var(--bg-light); padding: 16px; border-radius: 8px; margin-bottom: 20px; border: 1px solid var(--border-color);">
+        <!-- Order items summary -->
+      </div>
+
+      <form id="order-form">
+        <div class="form-group">
+          <label for="order-name">Họ và tên người nhận (*)</label>
+          <input type="text" id="order-name" placeholder="Ví dụ: Trần Thị Bình">
+          <div class="form-error">Vui lòng nhập họ và tên tối thiểu 2 ký tự.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="order-phone">Số điện thoại giao hàng (*)</label>
+          <input type="tel" id="order-phone" placeholder="Ví dụ: 0912345678">
+          <div class="form-error">Số điện thoại Việt Nam không hợp lệ (cần 10 chữ số bắt đầu bằng 03, 05, 07, 08, 09).</div>
+        </div>
+
+        <div class="form-group">
+          <label for="order-address">Địa chỉ giao hàng (*)</label>
+          <textarea id="order-address" rows="2" placeholder="Số nhà, Tên đường, Phường/Xã, Quận/Huyện, Tỉnh/TP"></textarea>
+          <div class="form-error">Vui lòng nhập địa chỉ cụ thể để giao hàng.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="order-payment">Phương thức thanh toán</label>
+          <select id="order-payment">
+            <option value="COD">Thanh toán khi nhận hàng (COD)</option>
+            <option value="BANK">Chuyển khoản Ngân hàng (VietQR)</option>
+            <option value="MOMO">Ví điện tử MoMo</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="order-note">Ghi chú đơn hàng (Không bắt buộc)</label>
+          <input type="text" id="order-note" placeholder="Ví dụ: Giao ngoài giờ hành chính, đóng gói bọc xốp cẩn thận...">
+        </div>
+
+        <button type="submit" class="submit-btn" style="background-color: #27ae60;">
+          Hoàn Tất & Đặt Hàng
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- TOAST CONTAINER -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Đặc Sản Tây Nguyên</h4>
+          <p>Kênh quảng bá chính gốc sản phẩm nông sản, thực phẩm và dược liệu núi rừng 5 tỉnh Tây Nguyên.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Điều Hướng</h4>
+          <ul>
+            <li><a href="index.html">Trang Chủ</a></li>
+            <li><a href="products.html">Sản Phẩm</a></li>
+            <li><a href="origins.html">Nguồn Gốc</a></li>
+            <li><a href="roadmap.html">Định Hướng</a></li>
+            <li><a href="contact.html">Liên Hệ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Danh Mục</h4>
+          <ul>
+            <li><a href="products.html">Cà phê Buôn Ma Thuột</a></li>
+            <li><a href="products.html">Thịt bò 1 nắng Gia Lai</a></li>
+            <li><a href="products.html">Sâm Ngọc Linh Kon Tum</a></li>
+            <li><a href="products.html">Hạt Macca Lâm Đồng</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Bản Đồ Nguồn Gốc</h4>
+          <p>Đắk Lắk | Gia Lai | Kon Tum | Lâm Đồng | Đắk Nông</p>
+          <p style="margin-top: 10px; font-size: 13px; color: #a1887f;">© 2026 Đặc Sản Tây Nguyên. Tất cả các quyền được bảo lưu.</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        Xây dựng với HTML5, CSS3 & Pure Vanilla JavaScript.
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

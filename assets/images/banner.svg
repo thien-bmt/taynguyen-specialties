@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2c1810"/>
+      <stop offset="40%" stop-color="#4a2810"/>
+      <stop offset="100%" stop-color="#123524"/>
+    </linearGradient>
+    <linearGradient id="sunGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f39c12"/>
+      <stop offset="100%" stop-color="#e67e22"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="450" fill="url(#heroGrad)"/>
+  
+  <!-- Sun behind mountains -->
+  <circle cx="950" cy="180" r="120" fill="url(#sunGrad)" opacity="0.8"/>
+  
+  <!-- Mountain contours (Tây Nguyên Highlands) -->
+  <path d="M 0 350 Q 300 200 600 320 T 1200 250 L 1200 450 L 0 450 Z" fill="#1b4332" opacity="0.7"/>
+  <path d="M 0 380 Q 400 240 800 360 T 1200 300 L 1200 450 L 0 450 Z" fill="#081c15" opacity="0.9"/>
+  
+  <!-- Rays / Glow -->
+  <path d="M 950 180 L 0 0 L 0 450 Z" fill="#ffffff" opacity="0.03"/>
+  <path d="M 950 180 L 1200 0 L 1200 450 Z" fill="#ffffff" opacity="0.03"/>
+  
+  <!-- Traditional Gong & Elephant motif silhouette -->
+  <circle cx="150" cy="150" r="70" fill="none" stroke="#d4a373" stroke-width="6" opacity="0.3"/>
+  <circle cx="150" cy="150" r="50" fill="none" stroke="#d4a373" stroke-width="3" stroke-dasharray="10 5" opacity="0.3"/>
+  <circle cx="150" cy="150" r="20" fill="#d4a373" opacity="0.3"/>
+
+  <!-- Text elements -->
+  <text x="100" y="210" fill="#f4a261" font-family="'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="44" letter-spacing="2">ĐẶC SẢN TÂY NGUYÊN</text>
+  <text x="100" y="260" fill="#e9c46a" font-family="'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="22">Tinh Hoa Núi Rừng - Nguồn Gốc Đất Đỏ Bazan</text>
+  
+  <!-- Decorative badge -->
+  <rect x="100" y="295" width="240" height="42" rx="21" fill="#e76f51"/>
+  <text x="220" y="322" fill="#ffffff" font-family="'Segoe UI', Roboto, sans-serif" font-weight="bold" font-size="15" text-anchor="middle">KHÁM PHÁ NGAY ➔</text>
+</svg>

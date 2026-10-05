@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgComLam" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#424242"/>
+      <stop offset="100%" stop-color="#1a1a1a"/>
+    </linearGradient>
+    <linearGradient id="chickenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff9800"/>
+      <stop offset="50%" stop-color="#f57c00"/>
+      <stop offset="100%" stop-color="#e65100"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="16" fill="url(#bgComLam)"/>
+  
+  <!-- Bamboo Tray -->
+  <ellipse cx="200" cy="180" rx="140" ry="60" fill="#8d6e63" stroke="#4e342e" stroke-width="4"/>
+  <ellipse cx="200" cy="175" rx="130" ry="52" fill="#d7ccc8"/>
+
+  <!-- Grilled Chicken -->
+  <path d="M 130 140 Q 200 110 270 140 C 290 180 250 200 200 200 C 150 200 110 180 130 140 Z" fill="url(#chickenGrad)" stroke="#bf360c" stroke-width="3"/>
+  <path d="M 150 145 C 190 135 210 135 250 145" fill="none" stroke="#5d4037" stroke-width="3" opacity="0.6"/>
+
+  <!-- Bamboo Rice Tubes (Cơm lam) -->
+  <rect x="110" y="210" width="180" height="18" rx="9" fill="#33691e" stroke="#1b5e20" stroke-width="2" transform="rotate(-10, 200, 210)"/>
+  <circle cx="115" cy="204" r="8" fill="#ffffff" transform="rotate(-10, 200, 210)"/>
+  
+  <rect x="110" y="230" width="170" height="18" rx="9" fill="#558b2f" stroke="#1b5e20" stroke-width="2" transform="rotate(-5, 200, 230)"/>
+
+  <!-- Tag -->
+  <rect x="20" y="20" width="110" height="30" rx="15" fill="#e65100"/>
+  <text x="75" y="40" fill="#ffffff" font-family="Arial, sans-serif" font-weight="bold" font-size="13" text-anchor="middle">ĐẮK NÔNG</text>
+</svg>

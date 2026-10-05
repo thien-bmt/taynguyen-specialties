@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgMang" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef6c00"/>
+      <stop offset="100%" stop-color="#e65100"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="16" fill="#3e2723"/>
+  <circle cx="200" cy="140" r="90" fill="#5d4037" opacity="0.6"/>
+  
+  <!-- Dried Bamboo Shoots Stack -->
+  <path d="M 140 220 L 200 80 L 260 220 Z" fill="#ffe082" stroke="#ffb300" stroke-width="3"/>
+  <path d="M 160 220 L 200 100 L 240 220 Z" fill="#ffb300" stroke="#ffa000" stroke-width="2"/>
+  
+  <!-- Horizontal segments of bamboo shoot -->
+  <line x1="170" y1="180" x2="230" y2="180" stroke="#bf360c" stroke-width="4"/>
+  <line x1="180" y1="150" x2="220" y2="150" stroke="#bf360c" stroke-width="4"/>
+  <line x1="190" y1="120" x2="210" y2="120" stroke="#bf360c" stroke-width="4"/>
+
+  <!-- Tag -->
+  <rect x="20" y="20" width="100" height="30" rx="15" fill="#f57c00"/>
+  <text x="70" y="40" fill="#ffffff" font-family="Arial, sans-serif" font-weight="bold" font-size="13" text-anchor="middle">KON TUM</text>
+</svg>

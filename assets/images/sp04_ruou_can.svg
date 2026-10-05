@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4e342e"/>
+      <stop offset="100%" stop-color="#21120e"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="16" fill="url(#bgGrad4)"/>
+  
+  <!-- Jar Base -->
+  <path d="M 160 80 L 240 80 L 260 120 C 290 170 280 230 240 250 L 160 250 C 120 230 110 170 140 120 Z" fill="#a1887f" stroke="#4e342e" stroke-width="4"/>
+  <path d="M 165 85 L 235 85 L 252 122 C 275 168 268 222 235 242 L 165 242 C 132 222 125 168 148 122 Z" fill="#8d6e63"/>
+  
+  <!-- Jar Patterns / Ethnic Patterns -->
+  <rect x="135" y="140" width="130" height="20" fill="#d7ccc8" opacity="0.8"/>
+  <path d="M 135 150 L 145 140 L 155 160 L 165 140 L 175 160 L 185 140 L 195 160 L 205 140 L 215 160 L 225 140 L 235 160 L 245 140 L 255 160 L 265 140" fill="none" stroke="#5d4037" stroke-width="3"/>
+
+  <!-- Straws (Cần) -->
+  <path d="M 180 90 Q 150 50 110 40" fill="none" stroke="#d7ccc8" stroke-width="6" stroke-linecap="round"/>
+  <path d="M 195 90 Q 200 40 190 20" fill="none" stroke="#efebe9" stroke-width="6" stroke-linecap="round"/>
+  <path d="M 215 90 Q 250 50 290 40" fill="none" stroke="#d7ccc8" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Leaf Wrap Neck -->
+  <ellipse cx="200" cy="80" rx="42" ry="12" fill="#33691e"/>
+  <ellipse cx="200" cy="80" rx="42" ry="12" fill="none" stroke="#558b2f" stroke-width="3"/>
+
+  <!-- Tag -->
+  <rect x="20" y="20" width="110" height="30" rx="15" fill="#8d6e63"/>
+  <text x="75" y="40" fill="#ffffff" font-family="Arial, sans-serif" font-weight="bold" font-size="13" text-anchor="middle">ĐẮK LẮK</text>
+</svg>
